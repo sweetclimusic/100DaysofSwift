@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     let xCoordinates: [Float] = [-0.7, 0, 0.7, 1.4]
     // to prevent taps on a instrument that is in it's animation playback
     var tappedEntity: [InstrumentEntity] = [InstrumentEntity]()
-    var loading: Bool = true
+    var modelsLoaded: Bool = false
     // Create the lottie AnimationView, private so only this view controls it
     private var animationView: AnimationView!
     
@@ -40,13 +40,16 @@ class ViewController: UIViewController {
     // loads entityies in the background using combine.
     func loadEntityInstruments(horizontalAnchor anchor : AnchorEntity) {
         //MARK: when does a entity get added to a anchor. or when
-        var anchorCancellable: Cancellable? = nil
-        anchorCancellable = arView.scene.subscribe(to: SceneEvents.AnchoredStateChanged.self, on: anchor) {
+        _ = arView.scene.subscribe(to: SceneEvents.AnchoredStateChanged.self, on: anchor) {
             (event) in
-                if event.isAnchored && anchor.children.count == 4{
-                    anchorCancellable?.cancel()
-                    self.loading = false
+            if event.isAnchored {
+                let allChildrenAnchored = anchor.children.allSatisfy{
+                    $0.isAnchored == true
+                }
+                if allChildrenAnchored {
+                    self.modelsLoaded = true
                     self.controlLoadingAnimation()
+                }
             }
         }
         
@@ -61,7 +64,7 @@ class ViewController: UIViewController {
         .sink(receiveCompletion: {
                 (error) in
                     cancellable?.cancel()
-                    self.loading = false
+                    self.modelsLoaded = true
                     self.controlLoadingAnimation()
         },
               receiveValue: {
@@ -103,8 +106,8 @@ class ViewController: UIViewController {
     private func controlLoadingAnimation() {
         //animation view has been loaded toggle play/stop
         if let _ = animationView {
-            //don't hide when loading
-            if !loading {
+            //hide when models have loading
+            if modelsLoaded {
                 view.sendSubviewToBack(animationView)
                 animationView.stop()
             }

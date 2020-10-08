@@ -17,9 +17,11 @@ class InstrumentEntity: Entity, HasCollision, HasModel {
     
     convenience init(modelEntity: ModelEntity) {
         self.init()
-        // take a reference to the model object and it's transform
+        // take a reference to the model object and it's transform\
+        modelEntity.transform.translation = .zero
         self.model = modelEntity.model
         self.transform = modelEntity.transform
+        
         //scale size in meters, relative to nil makes it relative to absolute space
         setSize(0.8, relativeTo: nil)
         //automatically add a collision Shape and any child models as well.
@@ -29,6 +31,8 @@ class InstrumentEntity: Entity, HasCollision, HasModel {
     func scale() {
         var scaleTransform = self.transform
         scaleTransform.scale = [1.5, 1.5, 1.5]
+        //djembe model isn't at zero when loaded. scaling places it off center moving it further away from the camera each time.
+        scaleTransform.translation = .zero
         move(to: scaleTransform, relativeTo: self, duration: 1, timingFunction: .easeInOut)
     }
     
