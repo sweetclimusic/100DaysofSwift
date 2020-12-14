@@ -1,0 +1,31 @@
+{
+    "menu":[
+        {
+            "title": "menu_item_house",
+            "image": "house",
+            "alt-image": "house.circle"
+        },
+        {
+            "title": "menu_item_classes",
+            "image": "person.3",
+            "alt-image": "person.2.circle"
+        },
+        {
+            "title": "menu_item_schedule",
+            "image": "calendar",
+            "alt-image": "calendar.circle"
+        },
+        {
+            "title": "menu_item_profile",
+            "image": "person.circle",
+            "alt-image": "person.crop.circle"
+        },
+        {
+            "title": "menu_item_settings",
+            "image": "gearshape"
+        }
+    ],
+    "cc" : "Green Farm Games Ltd. All rights reserved",
+    "terms" : "kickhiit.ai/terms-of-use",
+    "privacy" : "kickhiit.ai/privacy-policy"
+}
