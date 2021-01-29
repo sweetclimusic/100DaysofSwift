@@ -1,0 +1,13 @@
+{
+    "menuItemsUrl" : "kickhiit.ai/config/menuitems",
+    "remoteConfigsUrl" : "kickhiit.ai/config/remoteconfig",
+    [
+       "primaryColor" : "#D61A1F",
+       "secondaryColor" : "#F8B71D",
+       "tertiaryColor" : "#F9C31A",
+       "highlightColor" : "#FCD612",
+       "primaryFontColor" : "#000000",
+       "altFontColor" : "#FFFFFF",
+       "accentColor" : "#F9F9F9",
+    ]
+}
