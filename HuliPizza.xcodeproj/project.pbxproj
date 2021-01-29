@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC747A02252E5CDB004D7B7F /* HuliPizza WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CC747A01252E5CDB004D7B7F /* HuliPizza WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CC747A08252E5CDB004D7B7F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC747A06252E5CDB004D7B7F /* Interface.storyboard */; };
+		CC747A0A252E5CDF004D7B7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC747A09252E5CDF004D7B7F /* Assets.xcassets */; };
+		CC747A11252E5CDF004D7B7F /* HuliPizza WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CC747A10252E5CDF004D7B7F /* HuliPizza WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CC747A16252E5CDF004D7B7F /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC747A15252E5CDF004D7B7F /* InterfaceController.swift */; };
+		CC747A18252E5CDF004D7B7F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC747A17252E5CDF004D7B7F /* ExtensionDelegate.swift */; };
+		CC747A1A252E5CDF004D7B7F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC747A19252E5CDF004D7B7F /* NotificationController.swift */; };
+		CC747A1C252E5CDF004D7B7F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC747A1B252E5CDF004D7B7F /* ComplicationController.swift */; };
+		CC747A1E252E5CE0004D7B7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC747A1D252E5CE0004D7B7F /* Assets.xcassets */; };
+		CC747A33252E5FEE004D7B7F /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC747A31252E5FEE004D7B7F /* MenuModel.swift */; };
+		CC747A34252E5FEE004D7B7F /* DetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC747A32252E5FEE004D7B7F /* DetailInterfaceController.swift */; };
+		CC747A41252E7529004D7B7F /* RowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC747A40252E7529004D7B7F /* RowController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC747A03252E5CDB004D7B7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC7479F7252E5CDB004D7B7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC747A00252E5CDB004D7B7F;
+			remoteInfo = "HuliPizza WatchKit App";
+		};
+		CC747A12252E5CDF004D7B7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC7479F7252E5CDB004D7B7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC747A0F252E5CDF004D7B7F;
+			remoteInfo = "HuliPizza WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CC747A26252E5CE0004D7B7F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CC747A11252E5CDF004D7B7F /* HuliPizza WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC747A2A252E5CE0004D7B7F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				CC747A02252E5CDB004D7B7F /* HuliPizza WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CC7479FD252E5CDB004D7B7F /* HuliPizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuliPizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC747A01252E5CDB004D7B7F /* HuliPizza WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HuliPizza WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC747A07252E5CDB004D7B7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		CC747A09252E5CDF004D7B7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC747A0B252E5CDF004D7B7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC747A10252E5CDF004D7B7F /* HuliPizza WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HuliPizza WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC747A15252E5CDF004D7B7F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		CC747A17252E5CDF004D7B7F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		CC747A19252E5CDF004D7B7F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		CC747A1B252E5CDF004D7B7F /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		CC747A1D252E5CE0004D7B7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC747A1F252E5CE0004D7B7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC747A20252E5CE0004D7B7F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		CC747A31252E5FEE004D7B7F /* MenuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
+		CC747A32252E5FEE004D7B7F /* DetailInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailInterfaceController.swift; sourceTree = "<group>"; };
+		CC747A40252E7529004D7B7F /* RowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC747A0D252E5CDF004D7B7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC7479F6252E5CDB004D7B7F = {
+			isa = PBXGroup;
+			children = (
+				CC747A05252E5CDB004D7B7F /* HuliPizza WatchKit App */,
+				CC747A14252E5CDF004D7B7F /* HuliPizza WatchKit Extension */,
+				CC7479FE252E5CDB004D7B7F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC7479FE252E5CDB004D7B7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC7479FD252E5CDB004D7B7F /* HuliPizza.app */,
+				CC747A01252E5CDB004D7B7F /* HuliPizza WatchKit App.app */,
+				CC747A10252E5CDF004D7B7F /* HuliPizza WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC747A05252E5CDB004D7B7F /* HuliPizza WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				CC747A06252E5CDB004D7B7F /* Interface.storyboard */,
+				CC747A09252E5CDF004D7B7F /* Assets.xcassets */,
+				CC747A0B252E5CDF004D7B7F /* Info.plist */,
+			);
+			path = "HuliPizza WatchKit App";
+			sourceTree = "<group>";
+		};
+		CC747A14252E5CDF004D7B7F /* HuliPizza WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CC747A15252E5CDF004D7B7F /* InterfaceController.swift */,
+				CC747A17252E5CDF004D7B7F /* ExtensionDelegate.swift */,
+				CC747A32252E5FEE004D7B7F /* DetailInterfaceController.swift */,
+				CC747A31252E5FEE004D7B7F /* MenuModel.swift */,
+				CC747A19252E5CDF004D7B7F /* NotificationController.swift */,
+				CC747A1B252E5CDF004D7B7F /* ComplicationController.swift */,
+				CC747A1D252E5CE0004D7B7F /* Assets.xcassets */,
+				CC747A1F252E5CE0004D7B7F /* Info.plist */,
+				CC747A20252E5CE0004D7B7F /* PushNotificationPayload.apns */,
+				CC747A40252E7529004D7B7F /* RowController.swift */,
+			);
+			path = "HuliPizza WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC7479FC252E5CDB004D7B7F /* HuliPizza */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC747A2B252E5CE0004D7B7F /* Build configuration list for PBXNativeTarget "HuliPizza" */;
+			buildPhases = (
+				CC7479FB252E5CDB004D7B7F /* Resources */,
+				CC747A2A252E5CE0004D7B7F /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC747A04252E5CDB004D7B7F /* PBXTargetDependency */,
+			);
+			name = HuliPizza;
+			productName = HuliPizza;
+			productReference = CC7479FD252E5CDB004D7B7F /* HuliPizza.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		CC747A00252E5CDB004D7B7F /* HuliPizza WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC747A27252E5CE0004D7B7F /* Build configuration list for PBXNativeTarget "HuliPizza WatchKit App" */;
+			buildPhases = (
+				CC7479FF252E5CDB004D7B7F /* Resources */,
+				CC747A26252E5CE0004D7B7F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC747A13252E5CDF004D7B7F /* PBXTargetDependency */,
+			);
+			name = "HuliPizza WatchKit App";
+			productName = "HuliPizza WatchKit App";
+			productReference = CC747A01252E5CDB004D7B7F /* HuliPizza WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		CC747A0F252E5CDF004D7B7F /* HuliPizza WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC747A23252E5CE0004D7B7F /* Build configuration list for PBXNativeTarget "HuliPizza WatchKit Extension" */;
+			buildPhases = (
+				CC747A0C252E5CDF004D7B7F /* Sources */,
+				CC747A0D252E5CDF004D7B7F /* Frameworks */,
+				CC747A0E252E5CDF004D7B7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HuliPizza WatchKit Extension";
+			productName = "HuliPizza WatchKit Extension";
+			productReference = CC747A10252E5CDF004D7B7F /* HuliPizza WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC7479F7252E5CDB004D7B7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					CC7479FC252E5CDB004D7B7F = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					CC747A00252E5CDB004D7B7F = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					CC747A0F252E5CDF004D7B7F = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = CC7479FA252E5CDB004D7B7F /* Build configuration list for PBXProject "HuliPizza" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC7479F6252E5CDB004D7B7F;
+			productRefGroup = CC7479FE252E5CDB004D7B7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC7479FC252E5CDB004D7B7F /* HuliPizza */,
+				CC747A00252E5CDB004D7B7F /* HuliPizza WatchKit App */,
+				CC747A0F252E5CDF004D7B7F /* HuliPizza WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC7479FB252E5CDB004D7B7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7479FF252E5CDB004D7B7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC747A0A252E5CDF004D7B7F /* Assets.xcassets in Resources */,
+				CC747A08252E5CDB004D7B7F /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC747A0E252E5CDF004D7B7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC747A1E252E5CE0004D7B7F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC747A0C252E5CDF004D7B7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC747A34252E5FEE004D7B7F /* DetailInterfaceController.swift in Sources */,
+				CC747A1A252E5CDF004D7B7F /* NotificationController.swift in Sources */,
+				CC747A1C252E5CDF004D7B7F /* ComplicationController.swift in Sources */,
+				CC747A33252E5FEE004D7B7F /* MenuModel.swift in Sources */,
+				CC747A18252E5CDF004D7B7F /* ExtensionDelegate.swift in Sources */,
+				CC747A41252E7529004D7B7F /* RowController.swift in Sources */,
+				CC747A16252E5CDF004D7B7F /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC747A04252E5CDB004D7B7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC747A00252E5CDB004D7B7F /* HuliPizza WatchKit App */;
+			targetProxy = CC747A03252E5CDB004D7B7F /* PBXContainerItemProxy */;
+		};
+		CC747A13252E5CDF004D7B7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC747A0F252E5CDF004D7B7F /* HuliPizza WatchKit Extension */;
+			targetProxy = CC747A12252E5CDF004D7B7F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CC747A06252E5CDB004D7B7F /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC747A07252E5CDB004D7B7F /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC747A21252E5CE0004D7B7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CC747A22252E5CE0004D7B7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC747A24252E5CE0004D7B7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PC4UNNP43Y;
+				INFOPLIST_FILE = "HuliPizza WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = games.greenfarm.HuliPizza.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		CC747A25252E5CE0004D7B7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PC4UNNP43Y;
+				INFOPLIST_FILE = "HuliPizza WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = games.greenfarm.HuliPizza.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		CC747A28252E5CE0004D7B7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PC4UNNP43Y;
+				IBSC_MODULE = HuliPizza_WatchKit_Extension;
+				INFOPLIST_FILE = "HuliPizza WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = games.greenfarm.HuliPizza.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		CC747A29252E5CE0004D7B7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PC4UNNP43Y;
+				IBSC_MODULE = HuliPizza_WatchKit_Extension;
+				INFOPLIST_FILE = "HuliPizza WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = games.greenfarm.HuliPizza.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		CC747A2C252E5CE0004D7B7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PC4UNNP43Y;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = games.greenfarm.HuliPizza;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CC747A2D252E5CE0004D7B7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PC4UNNP43Y;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = games.greenfarm.HuliPizza;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC7479FA252E5CDB004D7B7F /* Build configuration list for PBXProject "HuliPizza" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC747A21252E5CE0004D7B7F /* Debug */,
+				CC747A22252E5CE0004D7B7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC747A23252E5CE0004D7B7F /* Build configuration list for PBXNativeTarget "HuliPizza WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC747A24252E5CE0004D7B7F /* Debug */,
+				CC747A25252E5CE0004D7B7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC747A27252E5CE0004D7B7F /* Build configuration list for PBXNativeTarget "HuliPizza WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC747A28252E5CE0004D7B7F /* Debug */,
+				CC747A29252E5CE0004D7B7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC747A2B252E5CE0004D7B7F /* Build configuration list for PBXNativeTarget "HuliPizza" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC747A2C252E5CE0004D7B7F /* Debug */,
+				CC747A2D252E5CE0004D7B7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC7479F7252E5CDB004D7B7F /* Project object */;
+}
