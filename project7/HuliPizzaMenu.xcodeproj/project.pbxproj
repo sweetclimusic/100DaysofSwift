@@ -1,0 +1,727 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC2BA2A825A36439000C2FA5 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC2BA2A625A36439000C2FA5 /* Interface.storyboard */; };
+		CC2BA2AA25A36439000C2FA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC2BA2A925A36439000C2FA5 /* Assets.xcassets */; };
+		CC2BA2B125A3643A000C2FA5 /* HuliPizzaMenuWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CC2BA2B025A3643A000C2FA5 /* HuliPizzaMenuWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CC2BA2B625A3643A000C2FA5 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2BA2B525A3643A000C2FA5 /* HostingController.swift */; };
+		CC2BA2B825A3643A000C2FA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2BA2B725A3643A000C2FA5 /* ContentView.swift */; };
+		CC2BA2BA25A3643A000C2FA5 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2BA2B925A3643A000C2FA5 /* ExtensionDelegate.swift */; };
+		CC2BA2BC25A3643A000C2FA5 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2BA2BB25A3643A000C2FA5 /* NotificationController.swift */; };
+		CC2BA2BE25A3643A000C2FA5 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2BA2BD25A3643A000C2FA5 /* NotificationView.swift */; };
+		CC2BA2C025A3643A000C2FA5 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2BA2BF25A3643A000C2FA5 /* ComplicationController.swift */; };
+		CC2BA2C225A3643A000C2FA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC2BA2C125A3643A000C2FA5 /* Assets.xcassets */; };
+		CC2BA2C525A3643A000C2FA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC2BA2C425A3643A000C2FA5 /* Preview Assets.xcassets */; };
+		CC2BA2CA25A3643A000C2FA5 /* HuliPizzaMenuWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CC2BA2A425A36439000C2FA5 /* HuliPizzaMenuWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CC2BA2DB25A365F4000C2FA5 /* PizzaOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2BA2D825A365F4000C2FA5 /* PizzaOrderView.swift */; };
+		CC2BA2DC25A365F4000C2FA5 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2BA2D925A365F4000C2FA5 /* MenuModel.swift */; };
+		CC2BA2DD25A365F4000C2FA5 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2BA2DA25A365F4000C2FA5 /* RowView.swift */; };
+		CC2BA2E125A3666E000C2FA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1BB1A6C24CF31FC0031E36C /* Assets.xcassets */; };
+		CC2BA2E625A36AEB000C2FA5 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2BA2E525A36AEB000C2FA5 /* DetailView.swift */; };
+		CC2BA2EB25A37134000C2FA5 /* RatingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2BA2EA25A37134000C2FA5 /* RatingsView.swift */; };
+		CC2BA2F025A48AEB000C2FA5 /* RatingsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2BA2EF25A48AEB000C2FA5 /* RatingsDetailView.swift */; };
+		CC460CC325A837B3004CC845 /* Stages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC460CC125A837B3004CC845 /* Stages.swift */; };
+		CC460CC425A837B3004CC845 /* ComplicationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC460CC225A837B3004CC845 /* ComplicationControllerExtension.swift */; };
+		CC460CCC25A98BCF004CC845 /* XLargeCircularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC460CCB25A98BCF004CC845 /* XLargeCircularView.swift */; };
+		CC460CDF25A98DA9004CC845 /* ZoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2BA2F725A5358D000C2FA5 /* ZoomView.swift */; };
+		CC460CF725A9A0CD004CC845 /* GraphicRectangularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC460CF625A9A0CD004CC845 /* GraphicRectangularView.swift */; };
+		CC460D0225ACB662004CC845 /* PizzaNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC460D0125ACB661004CC845 /* PizzaNotificationView.swift */; };
+		CC460D0A25ACB77D004CC845 /* OrderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC460D0925ACB77D004CC845 /* OrderButton.swift */; };
+		E1BB1A6924CF31FB0031E36C /* HuliPizzaMenuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BB1A6824CF31FB0031E36C /* HuliPizzaMenuApp.swift */; };
+		E1BB1A6B24CF31FB0031E36C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BB1A6A24CF31FB0031E36C /* ContentView.swift */; };
+		E1BB1A6D24CF31FC0031E36C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1BB1A6C24CF31FC0031E36C /* Assets.xcassets */; };
+		E1BB1A7024CF31FC0031E36C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1BB1A6F24CF31FC0031E36C /* Preview Assets.xcassets */; };
+		E1BB1A7A24CF322A0031E36C /* PizzaOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BB1A7724CF322A0031E36C /* PizzaOrderView.swift */; };
+		E1BB1A7B24CF322A0031E36C /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BB1A7824CF322A0031E36C /* MenuModel.swift */; };
+		E1BB1A7C24CF322A0031E36C /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BB1A7924CF322A0031E36C /* RowView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC2BA2B225A3643A000C2FA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1BB1A5D24CF31FB0031E36C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC2BA2AF25A3643A000C2FA5;
+			remoteInfo = "HuliPizzaMenuWatch Extension";
+		};
+		CC2BA2C825A3643A000C2FA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1BB1A5D24CF31FB0031E36C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC2BA2A325A36439000C2FA5;
+			remoteInfo = HuliPizzaMenuWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CC289FC1254D6E430076BD8A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				CC2BA2CA25A3643A000C2FA5 /* HuliPizzaMenuWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC2BA2CE25A3643A000C2FA5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CC2BA2B125A3643A000C2FA5 /* HuliPizzaMenuWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CC2BA2A425A36439000C2FA5 /* HuliPizzaMenuWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuliPizzaMenuWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC2BA2A725A36439000C2FA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		CC2BA2A925A36439000C2FA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC2BA2AB25A36439000C2FA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC2BA2B025A3643A000C2FA5 /* HuliPizzaMenuWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HuliPizzaMenuWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC2BA2B525A3643A000C2FA5 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		CC2BA2B725A3643A000C2FA5 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CC2BA2B925A3643A000C2FA5 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		CC2BA2BB25A3643A000C2FA5 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		CC2BA2BD25A3643A000C2FA5 /* NotificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		CC2BA2BF25A3643A000C2FA5 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		CC2BA2C125A3643A000C2FA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC2BA2C425A3643A000C2FA5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CC2BA2C625A3643A000C2FA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC2BA2C725A3643A000C2FA5 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		CC2BA2D825A365F4000C2FA5 /* PizzaOrderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaOrderView.swift; sourceTree = "<group>"; };
+		CC2BA2D925A365F4000C2FA5 /* MenuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
+		CC2BA2DA25A365F4000C2FA5 /* RowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		CC2BA2E525A36AEB000C2FA5 /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		CC2BA2EA25A37134000C2FA5 /* RatingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingsView.swift; sourceTree = "<group>"; };
+		CC2BA2EF25A48AEB000C2FA5 /* RatingsDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingsDetailView.swift; sourceTree = "<group>"; };
+		CC2BA2F725A5358D000C2FA5 /* ZoomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomView.swift; sourceTree = "<group>"; };
+		CC460CC125A837B3004CC845 /* Stages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stages.swift; sourceTree = "<group>"; };
+		CC460CC225A837B3004CC845 /* ComplicationControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplicationControllerExtension.swift; sourceTree = "<group>"; };
+		CC460CCB25A98BCF004CC845 /* XLargeCircularView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLargeCircularView.swift; sourceTree = "<group>"; };
+		CC460CF625A9A0CD004CC845 /* GraphicRectangularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicRectangularView.swift; sourceTree = "<group>"; };
+		CC460D0125ACB661004CC845 /* PizzaNotificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaNotificationView.swift; sourceTree = "<group>"; };
+		CC460D0925ACB77D004CC845 /* OrderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderButton.swift; sourceTree = "<group>"; };
+		E1BB1A6524CF31FB0031E36C /* HuliPizzaMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuliPizzaMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1BB1A6824CF31FB0031E36C /* HuliPizzaMenuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuliPizzaMenuApp.swift; sourceTree = "<group>"; };
+		E1BB1A6A24CF31FB0031E36C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E1BB1A6C24CF31FC0031E36C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1BB1A6F24CF31FC0031E36C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E1BB1A7124CF31FC0031E36C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1BB1A7724CF322A0031E36C /* PizzaOrderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaOrderView.swift; sourceTree = "<group>"; };
+		E1BB1A7824CF322A0031E36C /* MenuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
+		E1BB1A7924CF322A0031E36C /* RowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC2BA2AD25A3643A000C2FA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1BB1A6224CF31FB0031E36C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC2BA2A525A36439000C2FA5 /* HuliPizzaMenuWatch */ = {
+			isa = PBXGroup;
+			children = (
+				CC2BA2A625A36439000C2FA5 /* Interface.storyboard */,
+				CC2BA2A925A36439000C2FA5 /* Assets.xcassets */,
+				CC2BA2AB25A36439000C2FA5 /* Info.plist */,
+			);
+			path = HuliPizzaMenuWatch;
+			sourceTree = "<group>";
+		};
+		CC2BA2B425A3643A000C2FA5 /* HuliPizzaMenuWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CC2BA2B525A3643A000C2FA5 /* HostingController.swift */,
+				CC2BA2BB25A3643A000C2FA5 /* NotificationController.swift */,
+				CC2BA2BF25A3643A000C2FA5 /* ComplicationController.swift */,
+				CC460CC225A837B3004CC845 /* ComplicationControllerExtension.swift */,
+				CC2BA2B925A3643A000C2FA5 /* ExtensionDelegate.swift */,
+				CC460CF525A99E61004CC845 /* Views */,
+				CC460CC125A837B3004CC845 /* Stages.swift */,
+				CC460D0925ACB77D004CC845 /* OrderButton.swift */,
+				CC2BA2D925A365F4000C2FA5 /* MenuModel.swift */,
+				CC2BA2C125A3643A000C2FA5 /* Assets.xcassets */,
+				CC2BA2C625A3643A000C2FA5 /* Info.plist */,
+				CC2BA2C725A3643A000C2FA5 /* PushNotificationPayload.apns */,
+				CC2BA2C325A3643A000C2FA5 /* Preview Content */,
+			);
+			path = "HuliPizzaMenuWatch Extension";
+			sourceTree = "<group>";
+		};
+		CC2BA2C325A3643A000C2FA5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CC2BA2C425A3643A000C2FA5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CC460CF525A99E61004CC845 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CC2BA2BD25A3643A000C2FA5 /* NotificationView.swift */,
+				CC2BA2D825A365F4000C2FA5 /* PizzaOrderView.swift */,
+				CC2BA2DA25A365F4000C2FA5 /* RowView.swift */,
+				CC2BA2B725A3643A000C2FA5 /* ContentView.swift */,
+				CC2BA2E525A36AEB000C2FA5 /* DetailView.swift */,
+				CC2BA2EA25A37134000C2FA5 /* RatingsView.swift */,
+				CC2BA2EF25A48AEB000C2FA5 /* RatingsDetailView.swift */,
+				CC460CCB25A98BCF004CC845 /* XLargeCircularView.swift */,
+				CC2BA2F725A5358D000C2FA5 /* ZoomView.swift */,
+				CC460CF625A9A0CD004CC845 /* GraphicRectangularView.swift */,
+				CC460D0125ACB661004CC845 /* PizzaNotificationView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E1BB1A5C24CF31FB0031E36C = {
+			isa = PBXGroup;
+			children = (
+				E1BB1A6724CF31FB0031E36C /* HuliPizzaMenu */,
+				CC2BA2A525A36439000C2FA5 /* HuliPizzaMenuWatch */,
+				CC2BA2B425A3643A000C2FA5 /* HuliPizzaMenuWatch Extension */,
+				E1BB1A6624CF31FB0031E36C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E1BB1A6624CF31FB0031E36C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1BB1A6524CF31FB0031E36C /* HuliPizzaMenu.app */,
+				CC2BA2A425A36439000C2FA5 /* HuliPizzaMenuWatch.app */,
+				CC2BA2B025A3643A000C2FA5 /* HuliPizzaMenuWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1BB1A6724CF31FB0031E36C /* HuliPizzaMenu */ = {
+			isa = PBXGroup;
+			children = (
+				E1BB1A6824CF31FB0031E36C /* HuliPizzaMenuApp.swift */,
+				E1BB1A6A24CF31FB0031E36C /* ContentView.swift */,
+				E1BB1A7824CF322A0031E36C /* MenuModel.swift */,
+				E1BB1A7724CF322A0031E36C /* PizzaOrderView.swift */,
+				E1BB1A7924CF322A0031E36C /* RowView.swift */,
+				E1BB1A6C24CF31FC0031E36C /* Assets.xcassets */,
+				E1BB1A7124CF31FC0031E36C /* Info.plist */,
+				E1BB1A6E24CF31FC0031E36C /* Preview Content */,
+			);
+			path = HuliPizzaMenu;
+			sourceTree = "<group>";
+		};
+		E1BB1A6E24CF31FC0031E36C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E1BB1A6F24CF31FC0031E36C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC2BA2A325A36439000C2FA5 /* HuliPizzaMenuWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC2BA2CF25A3643A000C2FA5 /* Build configuration list for PBXNativeTarget "HuliPizzaMenuWatch" */;
+			buildPhases = (
+				CC2BA2A225A36439000C2FA5 /* Resources */,
+				CC2BA2CE25A3643A000C2FA5 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC2BA2B325A3643A000C2FA5 /* PBXTargetDependency */,
+			);
+			name = HuliPizzaMenuWatch;
+			productName = HuliPizzaMenuWatch;
+			productReference = CC2BA2A425A36439000C2FA5 /* HuliPizzaMenuWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		CC2BA2AF25A3643A000C2FA5 /* HuliPizzaMenuWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC2BA2CB25A3643A000C2FA5 /* Build configuration list for PBXNativeTarget "HuliPizzaMenuWatch Extension" */;
+			buildPhases = (
+				CC2BA2AC25A3643A000C2FA5 /* Sources */,
+				CC2BA2AD25A3643A000C2FA5 /* Frameworks */,
+				CC2BA2AE25A3643A000C2FA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HuliPizzaMenuWatch Extension";
+			productName = "HuliPizzaMenuWatch Extension";
+			productReference = CC2BA2B025A3643A000C2FA5 /* HuliPizzaMenuWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		E1BB1A6424CF31FB0031E36C /* HuliPizzaMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1BB1A7424CF31FC0031E36C /* Build configuration list for PBXNativeTarget "HuliPizzaMenu" */;
+			buildPhases = (
+				E1BB1A6124CF31FB0031E36C /* Sources */,
+				E1BB1A6224CF31FB0031E36C /* Frameworks */,
+				E1BB1A6324CF31FB0031E36C /* Resources */,
+				CC289FC1254D6E430076BD8A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC2BA2C925A3643A000C2FA5 /* PBXTargetDependency */,
+			);
+			name = HuliPizzaMenu;
+			productName = HuliPizzaMenu;
+			productReference = E1BB1A6524CF31FB0031E36C /* HuliPizzaMenu.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1BB1A5D24CF31FB0031E36C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					CC2BA2A325A36439000C2FA5 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					CC2BA2AF25A3643A000C2FA5 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					E1BB1A6424CF31FB0031E36C = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = E1BB1A6024CF31FB0031E36C /* Build configuration list for PBXProject "HuliPizzaMenu" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1BB1A5C24CF31FB0031E36C;
+			productRefGroup = E1BB1A6624CF31FB0031E36C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1BB1A6424CF31FB0031E36C /* HuliPizzaMenu */,
+				CC2BA2A325A36439000C2FA5 /* HuliPizzaMenuWatch */,
+				CC2BA2AF25A3643A000C2FA5 /* HuliPizzaMenuWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC2BA2A225A36439000C2FA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC2BA2AA25A36439000C2FA5 /* Assets.xcassets in Resources */,
+				CC2BA2A825A36439000C2FA5 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC2BA2AE25A3643A000C2FA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC2BA2C525A3643A000C2FA5 /* Preview Assets.xcassets in Resources */,
+				CC2BA2E125A3666E000C2FA5 /* Assets.xcassets in Resources */,
+				CC2BA2C225A3643A000C2FA5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1BB1A6324CF31FB0031E36C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1BB1A7024CF31FC0031E36C /* Preview Assets.xcassets in Resources */,
+				E1BB1A6D24CF31FC0031E36C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC2BA2AC25A3643A000C2FA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC2BA2F025A48AEB000C2FA5 /* RatingsDetailView.swift in Sources */,
+				CC2BA2DC25A365F4000C2FA5 /* MenuModel.swift in Sources */,
+				CC2BA2B825A3643A000C2FA5 /* ContentView.swift in Sources */,
+				CC2BA2DB25A365F4000C2FA5 /* PizzaOrderView.swift in Sources */,
+				CC2BA2E625A36AEB000C2FA5 /* DetailView.swift in Sources */,
+				CC460CCC25A98BCF004CC845 /* XLargeCircularView.swift in Sources */,
+				CC460CF725A9A0CD004CC845 /* GraphicRectangularView.swift in Sources */,
+				CC460CC425A837B3004CC845 /* ComplicationControllerExtension.swift in Sources */,
+				CC2BA2B625A3643A000C2FA5 /* HostingController.swift in Sources */,
+				CC2BA2DD25A365F4000C2FA5 /* RowView.swift in Sources */,
+				CC460CDF25A98DA9004CC845 /* ZoomView.swift in Sources */,
+				CC460CC325A837B3004CC845 /* Stages.swift in Sources */,
+				CC2BA2BC25A3643A000C2FA5 /* NotificationController.swift in Sources */,
+				CC2BA2EB25A37134000C2FA5 /* RatingsView.swift in Sources */,
+				CC460D0225ACB662004CC845 /* PizzaNotificationView.swift in Sources */,
+				CC2BA2BA25A3643A000C2FA5 /* ExtensionDelegate.swift in Sources */,
+				CC2BA2BE25A3643A000C2FA5 /* NotificationView.swift in Sources */,
+				CC460D0A25ACB77D004CC845 /* OrderButton.swift in Sources */,
+				CC2BA2C025A3643A000C2FA5 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1BB1A6124CF31FB0031E36C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1BB1A7B24CF322A0031E36C /* MenuModel.swift in Sources */,
+				E1BB1A7C24CF322A0031E36C /* RowView.swift in Sources */,
+				E1BB1A6B24CF31FB0031E36C /* ContentView.swift in Sources */,
+				E1BB1A7A24CF322A0031E36C /* PizzaOrderView.swift in Sources */,
+				E1BB1A6924CF31FB0031E36C /* HuliPizzaMenuApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC2BA2B325A3643A000C2FA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC2BA2AF25A3643A000C2FA5 /* HuliPizzaMenuWatch Extension */;
+			targetProxy = CC2BA2B225A3643A000C2FA5 /* PBXContainerItemProxy */;
+		};
+		CC2BA2C925A3643A000C2FA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC2BA2A325A36439000C2FA5 /* HuliPizzaMenuWatch */;
+			targetProxy = CC2BA2C825A3643A000C2FA5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CC2BA2A625A36439000C2FA5 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC2BA2A725A36439000C2FA5 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC2BA2CC25A3643A000C2FA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"HuliPizzaMenuWatch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 2EDR7Q8S8B;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "HuliPizzaMenuWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = games.greenfarm.HuliPizzaMenu.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		CC2BA2CD25A3643A000C2FA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"HuliPizzaMenuWatch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 2EDR7Q8S8B;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "HuliPizzaMenuWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = games.greenfarm.HuliPizzaMenu.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		CC2BA2D025A3643A000C2FA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2EDR7Q8S8B;
+				IBSC_MODULE = HuliPizzaMenuWatch_Extension;
+				INFOPLIST_FILE = HuliPizzaMenuWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = games.greenfarm.HuliPizzaMenu.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Debug;
+		};
+		CC2BA2D125A3643A000C2FA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2EDR7Q8S8B;
+				IBSC_MODULE = HuliPizzaMenuWatch_Extension;
+				INFOPLIST_FILE = HuliPizzaMenuWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = games.greenfarm.HuliPizzaMenu.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Release;
+		};
+		E1BB1A7224CF31FC0031E36C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E1BB1A7324CF31FC0031E36C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1BB1A7524CF31FC0031E36C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"HuliPizzaMenu/Preview Content\"";
+				DEVELOPMENT_TEAM = 2EDR7Q8S8B;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = HuliPizzaMenu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = games.greenfarm.HuliPizzaMenu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E1BB1A7624CF31FC0031E36C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"HuliPizzaMenu/Preview Content\"";
+				DEVELOPMENT_TEAM = 2EDR7Q8S8B;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = HuliPizzaMenu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = games.greenfarm.HuliPizzaMenu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC2BA2CB25A3643A000C2FA5 /* Build configuration list for PBXNativeTarget "HuliPizzaMenuWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC2BA2CC25A3643A000C2FA5 /* Debug */,
+				CC2BA2CD25A3643A000C2FA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC2BA2CF25A3643A000C2FA5 /* Build configuration list for PBXNativeTarget "HuliPizzaMenuWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC2BA2D025A3643A000C2FA5 /* Debug */,
+				CC2BA2D125A3643A000C2FA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1BB1A6024CF31FB0031E36C /* Build configuration list for PBXProject "HuliPizzaMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1BB1A7224CF31FC0031E36C /* Debug */,
+				E1BB1A7324CF31FC0031E36C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1BB1A7424CF31FC0031E36C /* Build configuration list for PBXNativeTarget "HuliPizzaMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1BB1A7524CF31FC0031E36C /* Debug */,
+				E1BB1A7624CF31FC0031E36C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E1BB1A5D24CF31FB0031E36C /* Project object */;
+}
