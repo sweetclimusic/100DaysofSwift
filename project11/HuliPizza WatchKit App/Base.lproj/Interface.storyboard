@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17156" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17034"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="HuliPizza_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="Ebg-wg-rgx" userLabel="Labels">
+                            <items>
+                                <label width="1" height="20" alignment="left" text="Huli Pizza Company" textAlignment="center" minimumScaleFactor="0.84999999999999998" id="0FQ-ES-e5n"/>
+                                <label width="1" alignment="left" text="Label" minimumScaleFactor="0.84999999999999998" id="vR6-rX-Cin"/>
+                            </items>
+                        </group>
+                        <table alignment="left" id="bOD-ep-kRA">
+                            <items>
+                                <tableRow identifier="row" id="tmG-lN-1pp" customClass="RowController" customModule="HuliPizza_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="6t0-VP-SbQ">
+                                        <items>
+                                            <imageView width="30" height="20" alignment="left" verticalAlignment="center" image="pencil.circle" catalog="system" id="E5h-Lb-A83"/>
+                                            <label alignment="left" verticalAlignment="center" text="Label" textAlignment="left" id="HNB-i0-lNc"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="image" destination="E5h-Lb-A83" id="xkU-Hb-mcz"/>
+                                        <outlet property="label" destination="HNB-i0-lNc" id="bQw-bf-AHb"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <button width="1" alignment="left" title="Clear" id="vsg-cR-ejs">
+                            <connections>
+                                <action selector="doClearSelection" destination="AgC-eL-Hgc" id="btA-Zg-G8b"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="clearSelectionBtn" destination="vsg-cR-ejs" id="vkN-x9-4Gq"/>
+                        <outlet property="selectedItemLabel" destination="vR6-rX-Cin" id="wNN-TY-Ttz"/>
+                        <outlet property="table" destination="bOD-ep-kRA" id="0OX-Ja-k4O"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="77" y="-148"/>
+        </scene>
+        <!--DetailController-->
+        <scene sceneID="8AO-UR-qCc">
+            <objects>
+                <controller identifier="DetailController" id="s5C-jz-81C" customClass="DetailInterfaceController" customModule="HuliPizza_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Label" id="5fW-Ic-Um3"/>
+                        <imageView alignment="left" image="square.and.pencil" catalog="system" id="XJl-Hc-Qww"/>
+                        <label alignment="left" text="Label" numberOfLines="0" id="AoC-K5-RqQ"/>
+                        <button width="1" alignment="left" title="Order" id="yc1-ZU-drN">
+                            <connections>
+                                <action selector="doOrderButton" destination="s5C-jz-81C" id="jVx-d4-zUJ"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="itemDescription" destination="AoC-K5-RqQ" id="xkh-Ls-QUR"/>
+                        <outlet property="itemImage" destination="XJl-Hc-Qww" id="OJ1-lH-qGK"/>
+                        <outlet property="itemName" destination="5fW-Ic-Um3" id="1Z9-rg-u7Y"/>
+                        <outlet property="orderButton" destination="yc1-ZU-drN" id="z3t-gm-f0L"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="360" y="-148"/>
+        </scene>
+        <!--RatingsController-->
+        <scene sceneID="FTX-sh-cue">
+            <objects>
+                <controller identifier="RatingsController" id="Iwl-br-TN6"/>
+            </objects>
+            <point key="canvasLocation" x="669" y="-148"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="-10" y="953"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="HuliPizza_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="238" y="953"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="HuliPizza_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="238" y="655"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pencil.circle" catalog="system" width="128" height="121"/>
+        <image name="square.and.pencil" catalog="system" width="128" height="115"/>
+    </resources>
+</document>
