@@ -1,0 +1,8 @@
+/* 
+  InfoPlist.strings
+  FocalBreathing
+
+  Created by Ashlee Muscroft on 27/01/2021.
+  
+*/
+NSMicrophoneUsageDescription = "If you would like to track your exhaling count within the app, please give IO permission to access your microphone";
