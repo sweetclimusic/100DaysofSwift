@@ -1,0 +1,48 @@
+/* 
+  Localizable.strings
+  FocalBreathing
+
+  Created by Ashlee Muscroft on 25/01/2021.
+  
+*/
+
+"start" = "Start";
+"btn_cancel" = "Cancel";
+"btn_ok" = "OK";
+/* translation strings for the Dr. Weil's Breathing Exercises: 4-7-8 Breath */
+"relax_title" = "Relax";
+"relax_description" = "A relaxing breathing technique to help destress,fall asleep,or reduce cravings.";
+/* settings view for user to change time intervals for total reps and reset between breaths */
+"relax_settings_title" = "Settings";
+"relax_settings_breaths" = "breaths";
+"relax_settings_rest" = "Rest between breaths";
+"relax_mins_label" = "Min";
+"relax_secs_label" = "Sec";
+/* translation for accessibility, label hidden for picker */
+"relax_mins_picker" = "Select number of minutes for the total exercise";
+"relax_sec_picker" = "Select number of seconds between breath cycles";
+"relax_instructions_step_1" = "breathing in for 4 seconds";
+"relax_instructions_step_2" = "hold the breath for 7 seconds";
+"relax_instructions_step_3" = "exhale through the mouth with a audible 'whosh' for 8 seconds";
+"relax_short_step_1" = "inhale for 4 seconds";
+"relax_short_step_2" = "hold for 7 seconds";
+"relax_short_step_3" = "exhaling for 8 seconds";
+/* translation strings for the Wim Hof Method Breathing */
+"artic_title" = "Artic";
+"artic_description" = "A intense breathing excerise alternating periods of hyperventilation and periods of breath retention";
+"artic_instructions_step_1" = "While sitting in a comfortable place, take 30 quick, deep breaths, inhaling through your nose and exhaling through your mouth.";
+"artic_instructions_step_2" = "Inhale a deep breath then exhale; holding until you need to breath in.";
+"artic_instructions_step_3" = "Inhale again, as deep as you can, and hold it for 10 seconds";
+"artic_short_step_1" = "30 quick deep breaths";
+"artic_short_step_2" = "Take a deep breath, then exhale until you need to breath in";
+"artic_short_step_3" = "Inhale and hold for 10 seconds";
+/* translation strings for the Grand Master Sken Breathing Exercises: 4-7-8 Breath */
+"endurance_title" = "Endurance";
+"endurance_description" = "A intense breathing technique to help destress,fall asleep,or reduce cravings.";
+"endurance_instructions_step_1" = "breathing in for 4 seconds";
+"endurance_instructions_step_2" = "hold the breath for %@ seconds";
+"endurance_instructions_step_3" = "exhale through the mouth with a audible 'whosh' for 8 seconds";
+"endurance_short_step_1" = "inhale for 4 seconds";
+/* seconds add programmatically */
+"endurance_short_step_2" = "hold for %@ seconds";
+"endurance_short_step_3" = "exhaling for 8 seconds";
